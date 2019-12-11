@@ -1,26 +1,24 @@
-# Stanford Course Review CS103 - Computability Theory and Complexity Theory
-
 For me, **CS103: Mathematical Foundations of Computing** is one of the class in which I had the most fun and also most pain taking it. Before taking this class, I did not have a lot experience writing mathematical proofs, and the only memories I had for writing proofs were painful and boring. However, this course made me realize how much fun it is to write proofs from all different angles and to explore the fundamental aspects of the world around us via proofs. 
 
 Structurally, CS103 covers and addresses three major questions:
 
-- Why are some problems harder to solve than others?
-- What problems can we solve with a computer?
-- How can we be certain in our answers to these questions?
+* Why are some problems harder to solve than others?
+* What problems can we solve with a computer?
+* How can we be certain in our answers to these questions?
 
 The actual order the course address the problems is backward. Starting from the third problem, we were introduced to a bunch of new concepts in discrete math - e.g. sets, graphs, binary relations - logic - e.g. first-order logic, propositional logic - and proving methods - e.g. proof by contrapositive, contradiction, induction. All of these concepts are preparation for the most challenging part of the course where we address the first two problems listed above. I personally found the first two questions, which are addressed by Computability Theory and Complexity Theory, respectively - the most interesting and challenging topics of the course. So in this article, I tried to put together the important concepts and theorems for these two topics, which I focused on during my review for the final.
 
-### Computability Theory
+## Computability Theory
 
 What *problems* can we *solve* with a *computer*?
 
 To address this question above, we need to first define "problem" and "computer".  Later, we will also need to know what it means to "solve" a problem. In CS103, the Formal Language Theory is adopted to define "problem". As for "computer", we will focus on two big categories: finite automata and Turing machine. 
 
-#### Formal Lanuage Theory
+### Formal Lanuage Theory
 
 Since every problem is a sequence of characters, or a string, the Formal Language Theory formulate problems as set of strings.
 
-#### Finite automata
+### Finite automata
 
 *Finite automata are an abstraction of computers with finite amount of resources.*
 
@@ -38,10 +36,10 @@ Since every problem is a sequence of characters, or a string, the Formal Languag
 
 <u>***Theorem***</u>: The following are equivalent:
 
-- *L* is a regular language.
-- There is a DFA for *L*.
-- There is an NFA for *L*. 
-- There is a regular expression for *L*.
+* *L* is a regular language.
+* There is a DFA for *L*.
+* There is an NFA for *L*. 
+* There is a regular expression for *L*.
 
 **Language concatenation**: the concatenation of two languages is defined as
 $$
@@ -98,16 +96,16 @@ $$
 
 **Context-free grammar**: 
 
-- **Nonterminal symbols** are variables. 
-- **Terminal symbols** are the alphabet of the CFG.
-- A set of **production rules** tell how a nonterminal symbol can be replaced by a string of terminal  and nonterminal symbols.
-- A **start symbol (*S*)**, which starts the derivation following the production, must be a *nonterminal*.
+* **Nonterminal symbols** are variables. 
+* **Terminal symbols** are the alphabet of the CFG.
+* A set of **production rules** tell how a nonterminal symbol can be replaced by a string of terminal  and nonterminal symbols.
+* A **start symbol (*S*)**, which starts the derivation following the production, must be a *nonterminal*.
 
 The language of a CFG *G* with alphabet Σ is defined as ℒ(G), which is the set of strings of terminals derivable from the start symbol. Formally,
 
 <u>***Theorem***</u>: Every regular language is context-free.
 
-#### Turing machines
+### Turing machines
 
 *Turing machines are an abstraction of computers with unbounded resources.*
 
@@ -135,9 +133,9 @@ The **Collatz Conjecture** says that the Hailstone Turing Machine will terminate
 
 For a TM *M*, one of the following can happen given an input string *w*: 
 
-- *M* **accepts** a string *w* if it enters an accept state when run on *w*. 
-- *M* **rejects** a string *w* if it enters a reject state when run on *w*. 
-- *M* **loops on** a string *w* if when run on *w* it enters neither an accept nor a reject state.
+* *M* **accepts** a string *w* if it enters an accept state when run on *w*. 
+* *M* **rejects** a string *w* if it enters a reject state when run on *w*. 
+* *M* **loops on** a string *w* if when run on *w* it enters neither an accept nor a reject state.
 
 *M* **halts on** the string *w* if it accepts or rejects it.
 
@@ -149,7 +147,7 @@ For a TM *M*, one of the following can happen given an input string *w*:
 
 
 
-#### R and RE
+### R and RE
 
 **R**: the set of all decidable languages; the class of languages that have deciders. Formally, 
 $$
@@ -186,11 +184,11 @@ This fact implies that **RE** and **R** are not the same.
 
 
 
-### Complexity Theory (briefly touched on)
+## Complexity Theory (briefly touched on)
 
 What problems can we solve with *efficiently* with a computer?
 
-#### P and NP
+### P and NP
 
 **P**: the class of problems that can solved efficiently by a computer. Formally, 
 $$
@@ -243,7 +241,7 @@ Any language that SAT can be reduced to must be NP-hard.
 
 
 
-### Summary
+## Summary
 
 Since CS103 is essentially a course of writing proofs, I also made the following chart, which will help with the proving process. 
 
