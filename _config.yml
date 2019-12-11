@@ -1,5 +1,4 @@
+theme: jekyll-theme-slate
 name: Jessica Liu by jesscel
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-
-theme: jekyll-theme-slate
