@@ -2,3 +2,23 @@
  ---
 
 @import "{{ site.theme }}";
+<nav>
+  <ul>
+    <li> 
+      <!-- link one -->
+      <a href="#aboutMe"> About Me </a>
+    </li>
+    <li>
+      <!-- link two -->
+       <a href="#Projects"> Projects </a>
+    </li>
+    <li>
+      <!-- link three -->
+      <a href="#CV"> CV </a>
+    </li>
+    <li>
+      <!-- link four -->
+      <a href="#Contacts"> Contacts </a>
+    </li>
+  </ul>
+</nav>
