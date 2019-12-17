@@ -75,8 +75,3 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
-  
-theme: jekyll-theme-slate
-name: Jessica Liu by jesscel
-title: Jessica Enci Liu
-description: For sharing and fun
