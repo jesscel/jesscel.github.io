@@ -26,7 +26,7 @@ Since every problem is a sequence of characters, or a string, the Formal Languag
 
 **DFA (Deterministic Finite Automata)**: a type of finite automata in which for each state in it, there is exactly one transition for each symbol in its alphabet $\Sigma$.
 
-<img src="/Users/jessicaaaaaa/Desktop/Screen Shot 2019-12-06 at 12.34.17 PM.png" alt="Screen Shot 2019-12-06 at 12.34.17 PM" style="zoom: 33%;" description="An example DFA for language that ends with \texttt{aa}"/>
+<img src="https://user-images.githubusercontent.com/41557986/70980312-0ff15180-20ee-11ea-9a74-34a88e086e59.png">
 
 **NFA (Nondeterministic Finite Automata)**: a type of finite automata in which for each state in it, there can be zero or multiple decisions that can be made at one point.
 
@@ -59,7 +59,6 @@ Note that the empty string $\varepsilon$ is always in L* for any language L.
 <u>***Closure properties of the regular languages***</u>: If $L_1$ and $L_2$ are regular languages over the alphabet $\Sigma$, then their *complement, union, intersection, concatenation, and Kleene star* are all regular languages.
 
 
-
 **Regular expression**: a way to describe a regular language using a string representation. 
 
 - Atomic regular expressions include the symbols $\emptyset$, $a \in \Sigma$, and $\varepsilon$.
@@ -69,7 +68,7 @@ Note that the empty string $\varepsilon$ is always in L* for any language L.
 
 <u>***Theorem***</u>: If L is a regular language, then there is a regular expression for L.
 
-<img src="/Users/jessicaaaaaa/Desktop/Screen Shot 2019-12-06 at 2.08.03 PM.png" style="zoom: 25%;" />
+<img src="https://user-images.githubusercontent.com/41557986/70980183-d9b3d200-20ed-11ea-8bdd-104f9fcdc148.png">
 
 Starting with an NFA *N* for a regular language *L*, use the following **state elimination algorithm** to find the regular expression for *L*:
 
@@ -77,8 +76,6 @@ Starting with an NFA *N* for a regular language *L*, use the following **state e
 2. Add $\varepsilon$-transition from $q_s$ to the original start state of N;
 3. Add $\varepsilon$-transition from every original accepting state of N to $q_f$ and mark them as not accepting;
 4. Repeatedly remove states other than $q_s$ and $q_f$ from the NFA by “shortcutting” them until only two states remain: $q_s$ and $q_f$ .
-
-
 
 **Distinguishability**: Two strings x ∈ Σ* and y ∈ Σ* are called *distinguishable relative to L* if there is a string w ∈ Σ* such that exactly one of xw and yw is in L. Formally,
 $$
@@ -140,12 +137,11 @@ For a TM *M*, one of the following can happen given an input string *w*:
 *M* **halts on** the string *w* if it accepts or rejects it.
 
 **Decider**: A TM that always halts on any input.
-
+<img src="https://user-images.githubusercontent.com/41557986/70979969-77f36800-20ed-11ea-8ebc-46b240712d95.png">
 **Recognizer**: A TM that either halts or loop on an input.
-
+<img src="https://user-images.githubusercontent.com/41557986/70980036-95283680-20ed-11ea-9d08-74f9d6b7d1c5.png">
 **Verifier**: A TM that always halts given any input *w* and a potential certificate *c* for *w*, you can check whether the certificate is correct.
-
-
+<img src="https://user-images.githubusercontent.com/41557986/70980071-a40ee900-20ed-11ea-835f-bfb90fe46146.png">
 
 ### R and RE
 
@@ -215,7 +211,7 @@ A language is **NP-complete** if L is in NP and L is NP-hard.
 
 > Intuition: The NP-complete problems are the hardest problems in NP.
 
-<img src="/Users/jessicaaaaaa/Desktop/Screen Shot 2019-12-07 at 12.46.52 PM.png" alt="Screen Shot 2019-12-07 at 12.46.52 PM" style="zoom: 33%;" />
+<img src="https://user-images.githubusercontent.com/41557986/70980138-c274e480-20ed-11ea-8911-6679537afc83.png">
 
 **Satisfiability**: A propositional logic formula φ is called satisfiable if there is some assignment to its variables that makes it evaluate to true.
 
