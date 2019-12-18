@@ -1,3 +1,8 @@
+---
+layout: post
+title: Stanford CS103 Review: Computability Theory & Complexity Theory
+---
+
 For me, **CS103: Mathematical Foundations of Computing** is one of the class in which I had the most fun and also most pain taking it. Before taking this class, I did not have a lot experience writing mathematical proofs, and the only memories I had for writing proofs were painful and boring. However, this course made me realize how much fun it is to write proofs from all different angles and to explore the fundamental aspects of the world around us via proofs. 
 
 Structurally, CS103 covers and addresses three major questions:
