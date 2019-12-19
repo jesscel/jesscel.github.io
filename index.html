@@ -24,6 +24,12 @@
       </header>
       <section>
         Enci Liu, aka Jessica, is a sophomore studying Computer Science and Music at Stanford University. Jessica wants to be a human being that embraces the modern society while maintaining a classical essence. She might be obsorbed in coding, but she could also be orchestrating music pieces for hours. But above all, Jessica lives for her own aesthetics. 
+      	{% for post in site.posts %}
+	    <li>
+	      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	      <p>{{ post.excerpt }}</p>
+	    </li>
+	{% endfor %}
       </section>
     </div>
   </body>
