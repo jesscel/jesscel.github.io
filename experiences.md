@@ -6,7 +6,9 @@ permalink: /experiences/
 
 ## Projects
 
-XYZ...
+**IS-Count**
+![Visualization of distributions in Africa. The proposal distribution learned from the population density raster (Subfig. (c)) represents the ground truth building distribution (Subfig. (d)) quite well. In the most ideal case, we want the proposal distribution to be proportional to the ground truth.](../assets/projects/is_count/visualization.png)
+[Project homepage](https://is-count.github.io/)
 
 ## Publications
 

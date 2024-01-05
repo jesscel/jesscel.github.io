@@ -1,5 +1,7 @@
 ---
 layout: post
+title: "Importance Sampling Explained End-to-End"
+categories: technical_concepts
 ---
 
 Importance sampling is a useful technique when it's infeasible for us to sample from the real distribution p, when we want to reduce variance of the current Monte Carlo estimator, or when we only know p up to a multiplicative constant.
