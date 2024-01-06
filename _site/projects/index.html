@@ -3,21 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Experiences | Jessica Liu’s Personal Blog 🦭</title>
+<title>Projects | Jessica Liu’s Personal Blog 🦭</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Experiences" />
+<meta property="og:title" content="Projects" />
 <meta name="author" content="Jessica Liu" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Writing about my learning journey." />
 <meta property="og:description" content="Writing about my learning journey." />
-<link rel="canonical" href="http://localhost:4000/experiences/" />
-<meta property="og:url" content="http://localhost:4000/experiences/" />
+<link rel="canonical" href="http://localhost:4000/projects/" />
+<meta property="og:url" content="http://localhost:4000/projects/" />
 <meta property="og:site_name" content="Jessica Liu’s Personal Blog 🦭" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Experiences" />
+<meta property="twitter:title" content="Projects" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jessica Liu"},"description":"Writing about my learning journey.","headline":"Experiences","url":"http://localhost:4000/experiences/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Jessica Liu"},"description":"Writing about my learning journey.","headline":"Projects","url":"http://localhost:4000/projects/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jessica Liu&apos;s Personal Blog 🦭" />
 
@@ -34,7 +34,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/experiences/">Experiences</a><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/projects/">Projects</a><a class="page-link" href="/about/">About</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -42,25 +42,48 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Experiences</h1>
+    <h1 class="post-title">Projects</h1>
   </header>
 
   <div class="post-content">
-    <h2 id="projects">Projects</h2>
+    <h1 id="is-count">IS-Count</h1>
 
-<p><strong>IS-Count</strong>
-<img src="https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/projects/is_count/visualization.jpg" alt="Visualization of distributions in Africa. The proposal distribution learned from the population density raster (Subfig. (c)) represents the ground truth building distribution (Subfig. (d)) quite well. In the most ideal case, we want the proposal distribution to be proportional to the ground truth." />
-<a href="https://is-count.github.io/">Project homepage</a></p>
+<figure>
+  <img src="https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/projects/is_count/pipeline.png" alt="IS-Count pipeline" />
+  <figcaption style="text-align: center; color: #808080;"><em>Compared to the exhaustive approach, IS-Count largely reduces the number of satellite images and human annotations while achieving a high accuracy.</em></figcaption>
+</figure>
 
-<h2 id="publications">Publications</h2>
+<figure>
+  <img src="https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/projects/is_count/visualization.jpg" alt="Visualization" />
+  <figcaption style="text-align: center; color: #808080;"><em>Visualization of distributions in Africa. The proposal distribution learned from the population density raster (Subfig. (c)) represents the ground truth building distribution (Subfig. (d)) quite well. In the most ideal case, we want the proposal distribution to be proportional to the ground truth.</em></figcaption>
+</figure>
 
-<p>IS-Count: Large-scale Object Counting from Satellite Images with Covariate-based Importance Sampling. 
-Chenlin Meng*, <strong>Enci Liu*</strong>, Willie Neiswanger, Jiaming Song, Marshall Burke, David B. Lobell, Stefano Ermon. 
-In Proc. 36th AAAI Conference on Artificial Intelligence, (AAAI 2022).</p>
+<ul>
+  <li><a href="https://is-count.github.io/">🧩 Project homepage</a></li>
+  <li><a href="https://arxiv.org/pdf/2112.09126.pdf">📃 Paper</a></li>
+</ul>
 
-<p>Metadata Shaping: Natural Language Annotations for the Tail
-Simran Arora, Sen Wu, <strong>Enci Liu*</strong>, and Christopher Ré. 
-In Findings of ACL 2022.</p>
+<!-- IS-Count: Large-scale Object Counting from Satellite Images with Covariate-based Importance Sampling. 
+Chenlin Meng*, **Enci Liu\***, Willie Neiswanger, Jiaming Song, Marshall Burke, David B. Lobell, Stefano Ermon. 
+In Proc. 36th AAAI Conference on Artificial Intelligence, (AAAI 2022). -->
+
+<h1 id="metadata-shaping">Metadata Shaping</h1>
+
+<p>Metadata Shaping is a simple and effective approach to enhance LMs with knowledge. The method involves inserting readily available entity metadata into examples based on mutual information, and training on the shaped data.</p>
+
+<figure>
+  <img src="https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/projects/metadata_shaping/shaping_main.png" alt="Metadata Shaping" />
+  <figcaption style="text-align: center; color: #808080;"><em>Metadata Shaping shifts the weights of the pretrained model usefully to the metadata token.</em></figcaption>
+</figure>
+
+<ul>
+  <li><a href="https://github.com/simran-arora/metadatashaping">🧩 Project homepage</a></li>
+  <li><a href="https://aclanthology.org/2022.findings-acl.137.pdf">📃 Paper</a></li>
+</ul>
+
+<!-- Metadata Shaping: Natural Language Annotations for the Tail
+Simran Arora, Sen Wu, **Enci Liu\***, and Christopher Ré. 
+In Findings of ACL 2022. -->
 
   </div>
 
