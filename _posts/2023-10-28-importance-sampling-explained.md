@@ -39,6 +39,7 @@ Translating that into our example, we can say that when N is large enough, the d
 Since Monte Carlo Method generates unbiased estimator for the expectation of a distribution, the expectation and variance of the estimator are computed as follows:
 
 ![equation 4](https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/posts/2023-10-28-importance-sampling-explained/equation-4.jpg)
+
 ![equation 5](https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/posts/2023-10-28-importance-sampling-explained/equation-5.jpg)
 
 # Importance Sampling (IS)
@@ -63,6 +64,7 @@ Say we use IS and estimate the expectation below:
 We can compute the expectation and variance of the new estimator r as follows:
 
 ![equation 8](https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/posts/2023-10-28-importance-sampling-explained/equation-8.jpg)
+
 ![equation 9](https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/posts/2023-10-28-importance-sampling-explained/equation-9.jpg)
 
 We see that the new estimator r is still an unbiased estimator for the expectation of f(x) since the expectation of r is equal to the value being estimated.
@@ -94,7 +96,9 @@ Let's define the function of interest f(x) as follows:
 We can compute the expectation and variance of the Monte Carlo estimator over p(x) as follows:
 
 ![equation 12](https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/posts/2023-10-28-importance-sampling-explained/equation-12.jpg)
+
 ![equation 13](https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/posts/2023-10-28-importance-sampling-explained/equation-13.jpg)
+
 ![equation 14](https://raw.githubusercontent.com/jesscel/jesscel.github.io/master/assets/posts/2023-10-28-importance-sampling-explained/equation-14.jpg)
 
 Now say we have a new distribution q(x) defined as follows:
